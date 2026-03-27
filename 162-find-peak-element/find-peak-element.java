@@ -14,9 +14,11 @@ class Solution {
             }else if(nums[mid]>nums[mid-1]){
                 start=mid+1;
             }
-            // else if(nums[mid]>nums[mid+1]){
-            //     start=mid-1;
-            // }
+
+            else if(nums[mid]>nums[mid+1]){
+                end=mid-1;
+            }
+
             else{    //edge case to solve for the multiple peaks
                 end=mid-1;
             }
